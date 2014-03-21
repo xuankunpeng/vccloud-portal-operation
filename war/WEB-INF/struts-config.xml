@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts-config PUBLIC
+  "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN"
+  "http://struts.apache.org/dtds/struts-config_1_1.dtd">
+
+<struts-config>
+	<action-mappings>
+		<action path="/user/signIn" type="com.vccloud.portal.action.user.SignInAction" />
+		<action path="/user/signOut" type="com.vccloud.portal.action.user.SignOutAction" />
+		<action path="/vidyo/searchConferenceCall2s" type="com.vccloud.portal.action.vidyo.SearchConferenceCall2sAction" />
+		<action path="/vidyo/storePortalInfo" type="com.vccloud.portal.action.vidyo.StorePortalInfoAction" />
+		<action path="/vidyo/getPortalInfo" type="com.vccloud.portal.action.vidyo.GetPortalInfoAction" />
+		<action path="/user/searchMembers" type="com.vccloud.portal.action.user.SearchMembersAction" />
+		<action path="/user/updateMemberPassword" type="com.vccloud.portal.action.user.UpdateMemberPasswordAction" />
+		<action path="/user/updatePassword" type="com.vccloud.portal.action.user.UpdatePasswordAction" />
+		<action path="/user/updateDisplayName" type="com.vccloud.portal.action.user.UpdateDisplayNameAction" />
+		<action path="/user/updateMemberDisplayName" type="com.vccloud.portal.action.user.UpdateMemberDisplayNameAction" />
+		<action path="/vidyo/searchRooms" type="com.vccloud.portal.action.vidyo.SearchRoomsAction" />
+		<action path="/vidyo/updateRoomName" type="com.vccloud.portal.action.vidyo.UpdateRoomNameAction" />
+		<action path="/vidyo/updateRoomPin" type="com.vccloud.portal.action.vidyo.UpdateRoomPinAction" />
+		<action path="/vidyo/clearRoom" type="com.vccloud.portal.action.vidyo.ClearRoomAction" />
+		<action path="/vidyo/storeLegacy" type="com.vccloud.portal.action.vidyo.StoreLegacyAction" />
+		<action path="/vidyo/getLegacies" type="com.vccloud.portal.action.vidyo.GetLegaciesAction" />
+		<action path="/vidyo/assignLegacies" type="com.vccloud.portal.action.vidyo.AssignLegaciesAction" />
+		<action path="/vidyo/deleteLegacy" type="com.vccloud.portal.action.vidyo.DeleteLegacyAction" />
+		<action path="/vidyo/searchLegacies" type="com.vccloud.portal.action.vidyo.SearchLegaciesAction" />
+		<action path="/vidyo/getRoomProfile" type="com.vccloud.portal.action.vidyo.GetRoomProfileAction" />
+		<action path="/vidyo/storeRoomProfile" type="com.vccloud.portal.action.vidyo.StoreRoomProfileAction" />
+		<action path="/vidyo/resetRoomURL" type="com.vccloud.portal.action.vidyo.ResetRoomURLAction" />
+		<!-- Operation Interfaces -->
+		<action path="/operation/user/signIn" type="com.vccloud.portal.action.operation.user.SignInAction" />
+		<action path="/operation/user/signOut" type="com.vccloud.portal.action.operation.user.SignOutAction" />
+		<action path="/operation/vidyo/storePortal" type="com.vccloud.portal.action.operation.vidyo.StorePortalAction" />
+		<action path="/operation/vidyo/getPortal" type="com.vccloud.portal.action.operation.vidyo.GetPortalAction" />
+		<action path="/operation/vidyo/deletePortal" type="com.vccloud.portal.action.operation.vidyo.DeletePortalAction" />
+		<action path="/operation/vidyo/searchPortals" type="com.vccloud.portal.action.operation.vidyo.SearchPortalsAction" />
+		<action path="/operation/vidyo/searchTenants" type="com.vccloud.portal.action.operation.vidyo.SearchTenantsAction" />
+		<action path="/operation/vidyo/prepare4StoreTenant" type="com.vccloud.portal.action.operation.vidyo.Prepare4StoreTenantAction" />
+		<action path="/operation/vidyo/storeTenant" type="com.vccloud.portal.action.operation.vidyo.StoreTenantAction" />
+		<action path="/operation/vidyo/getTenant" type="com.vccloud.portal.action.operation.vidyo.GetTenantAction" />
+		<action path="/operation/vidyo/deleteTenant" type="com.vccloud.portal.action.operation.vidyo.DeleteTenantAction" />
+		<action path="/operation/vidyo/check4StoreTenant" type="com.vccloud.portal.action.operation.vidyo.Check4StoreTenantAction" />
+		<action path="/operation/user/searchMembers" type="com.vccloud.portal.action.operation.user.SearchMembersAction" />
+		<action path="/operation/user/storeMember" type="com.vccloud.portal.action.operation.user.StoreMemberAction" />
+		<action path="/operation/user/prepare4StoreMember" type="com.vccloud.portal.action.operation.user.Prepare4StoreMemberAction" />
+		<action path="/operation/user/deleteMember" type="com.vccloud.portal.action.operation.user.DeleteMemberAction" />
+		<action path="/operation/user/updateMemberPassword" type="com.vccloud.portal.action.operation.user.UpdateMemberPasswordAction" />
+		<action path="/operation/user/getMember" type="com.vccloud.portal.action.operation.user.GetMemberAction" />
+		<action path="/operation/vidyo/searchRooms" type="com.vccloud.portal.action.operation.vidyo.SearchRoomsAction" />
+		<action path="/operation/vidyo/storeRoom" type="com.vccloud.portal.action.operation.vidyo.StoreRoomAction" />
+		<action path="/operation/vidyo/getRoom" type="com.vccloud.portal.action.operation.vidyo.GetRoomAction" />
+		<action path="/operation/vidyo/deleteRoom" type="com.vccloud.portal.action.operation.vidyo.DeleteRoomAction" />
+		<action path="/operation/vidyo/prepare4StoreRoom" type="com.vccloud.portal.action.operation.vidyo.Prepare4StoreRoomAction" />
+		<action path="/operation/vidyo/updateRoomPin" type="com.vccloud.portal.action.operation.vidyo.UpdateRoomPinAction" />
+		<action path="/operation/vidyo/updateRoomModeratorPin" type="com.vccloud.portal.action.operation.vidyo.UpdateRoomModeratorPinAction" />
+		<action path="/operation/vidyo/resetRoomURL" type="com.vccloud.portal.action.operation.vidyo.ResetRoomURLAction" />
+		<action path="/operation/vidyo/clearRoom" type="com.vccloud.portal.action.operation.vidyo.ClearRoomAction" />
+		<action path="/operation/vidyo/getGroups" type="com.vccloud.portal.action.operation.vidyo.GetGroupsAction" />
+		<action path="/operation/vidyo/getGroup" type="com.vccloud.portal.action.operation.vidyo.GetGroupAction" />
+		<action path="/operation/vidyo/deleteGroup" type="com.vccloud.portal.action.operation.vidyo.DeleteGroupAction" />
+		<action path="/operation/vidyo/storeGroup" type="com.vccloud.portal.action.operation.vidyo.StoreGroupAction" />
+		<action path="/operation/vidyo/getTenantsByPortalConfigId" type="com.vccloud.portal.action.operation.vidyo.GetTenantsByPortalConfigIdAction" />
+		<action path="/operation/vidyo/searchCdrs" type="com.vccloud.portal.action.operation.vidyo.SearchCdrsAction" />
+		<action path="/operation/user/importMember" type="com.vccloud.portal.action.operation.user.StoreMemberFromExcleAction" />
+	</action-mappings>
+</struts-config>
